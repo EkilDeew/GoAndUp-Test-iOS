@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		695265CB25E9387B00FE39D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695265C925E9387B00FE39D1 /* Main.storyboard */; };
 		695265CD25E9387C00FE39D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695265CC25E9387C00FE39D1 /* Assets.xcassets */; };
 		695265D025E9387C00FE39D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695265CE25E9387C00FE39D1 /* LaunchScreen.storyboard */; };
+		695265DA25E938A700FE39D1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695265D925E938A700FE39D1 /* Service.swift */; };
+		695265DF25E9391100FE39D1 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695265DE25E9391100FE39D1 /* Episode.swift */; };
+		695265E425E9396E00FE39D1 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695265E325E9396E00FE39D1 /* Show.swift */; };
+		695265E825E93D6100FE39D1 /* EpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695265E725E93D6100FE39D1 /* EpisodeCell.xib */; };
+		695265EB25E93E3E00FE39D1 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695265EA25E93E3E00FE39D1 /* EpisodeCell.swift */; };
+		695265EF25E9406700FE39D1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 695265EE25E9406700FE39D1 /* SDWebImage */; };
+		695265F625E9469400FE39D1 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695265F525E9469400FE39D1 /* AnimationController.swift */; };
+		695265F925E9477300FE39D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695265F825E9477300FE39D1 /* DetailViewController.swift */; };
+		695265FD25E94E4700FE39D1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695265FC25E94E4700FE39D1 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,14 @@
 		695265CC25E9387C00FE39D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		695265CF25E9387C00FE39D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		695265D125E9387C00FE39D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		695265D925E938A700FE39D1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		695265DE25E9391100FE39D1 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		695265E325E9396E00FE39D1 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		695265E725E93D6100FE39D1 /* EpisodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeCell.xib; sourceTree = "<group>"; };
+		695265EA25E93E3E00FE39D1 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
+		695265F525E9469400FE39D1 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		695265F825E9477300FE39D1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		695265FC25E94E4700FE39D1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695265EF25E9406700FE39D1 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,10 @@
 		695265C225E9387A00FE39D1 /* GoAndUp */ = {
 			isa = PBXGroup;
 			children = (
+				695265FB25E94E4000FE39D1 /* Extension */,
+				695265E625E93D5900FE39D1 /* Cell */,
+				695265DD25E938DF00FE39D1 /* Model */,
+				695265D825E9388800FE39D1 /* Services */,
 				695265C325E9387A00FE39D1 /* AppDelegate.swift */,
 				695265C525E9387B00FE39D1 /* SceneDelegate.swift */,
 				695265C725E9387B00FE39D1 /* ViewController.swift */,
@@ -63,8 +85,44 @@
 				695265CC25E9387C00FE39D1 /* Assets.xcassets */,
 				695265CE25E9387C00FE39D1 /* LaunchScreen.storyboard */,
 				695265D125E9387C00FE39D1 /* Info.plist */,
+				695265F525E9469400FE39D1 /* AnimationController.swift */,
+				695265F825E9477300FE39D1 /* DetailViewController.swift */,
 			);
 			path = GoAndUp;
+			sourceTree = "<group>";
+		};
+		695265D825E9388800FE39D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				695265D925E938A700FE39D1 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		695265DD25E938DF00FE39D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				695265DE25E9391100FE39D1 /* Episode.swift */,
+				695265E325E9396E00FE39D1 /* Show.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		695265E625E93D5900FE39D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				695265E725E93D6100FE39D1 /* EpisodeCell.xib */,
+				695265EA25E93E3E00FE39D1 /* EpisodeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		695265FB25E94E4000FE39D1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				695265FC25E94E4700FE39D1 /* String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +141,9 @@
 			dependencies = (
 			);
 			name = GoAndUp;
+			packageProductDependencies = (
+				695265EE25E9406700FE39D1 /* SDWebImage */,
+			);
 			productName = GoAndUp;
 			productReference = 695265C025E9387A00FE39D1 /* GoAndUp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 695265B725E9387A00FE39D1;
+			packageReferences = (
+				695265ED25E9406700FE39D1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 695265C125E9387A00FE39D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				695265D025E9387C00FE39D1 /* LaunchScreen.storyboard in Resources */,
+				695265E825E93D6100FE39D1 /* EpisodeCell.xib in Resources */,
 				695265CD25E9387C00FE39D1 /* Assets.xcassets in Resources */,
 				695265CB25E9387B00FE39D1 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695265F925E9477300FE39D1 /* DetailViewController.swift in Sources */,
+				695265F625E9469400FE39D1 /* AnimationController.swift in Sources */,
+				695265FD25E94E4700FE39D1 /* String.swift in Sources */,
+				695265E425E9396E00FE39D1 /* Show.swift in Sources */,
 				695265C825E9387B00FE39D1 /* ViewController.swift in Sources */,
+				695265DF25E9391100FE39D1 /* Episode.swift in Sources */,
+				695265DA25E938A700FE39D1 /* Service.swift in Sources */,
+				695265EB25E93E3E00FE39D1 /* EpisodeCell.swift in Sources */,
 				695265C425E9387A00FE39D1 /* AppDelegate.swift in Sources */,
 				695265C625E9387B00FE39D1 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAAUM7S3Z8;
 				INFOPLIST_FILE = GoAndUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAAUM7S3Z8;
 				INFOPLIST_FILE = GoAndUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		695265ED25E9406700FE39D1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		695265EE25E9406700FE39D1 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 695265ED25E9406700FE39D1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 695265B825E9387A00FE39D1 /* Project object */;
 }
